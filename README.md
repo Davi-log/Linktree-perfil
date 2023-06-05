@@ -4,4 +4,4 @@ Praticando alguns conceitos basicos em:
 * CSS
 
 # Funcionalidade
-Uso de textos com redirecionamento para páginas linkadas
+Uso de textos com redirecionamento para páginas linkadas.
