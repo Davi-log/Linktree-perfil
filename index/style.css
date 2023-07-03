@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Overpass:wght@400;500&display=swap');
+:root{
+    --font-family-parag: 'Outfit', sans-serif;
+    --font-family-title: 'Overpass', sans-serif;
+}
+
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: black;
+}
+
+body{
+    background: url("certificados/stars.png") no-repeat center center;
+    background-size: cover;
+    width: 100vw;
+}
+
+ul, li, a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family: var(--font-family-parag);
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+strong{
+    display: flex;
+    padding: 1.5rem 0 0 0;
+    text-indent: 5rem;
+    color: rgb(0, 216, 245);
+    font-family: var(--font-family-title);
+}
+
+
+section{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5rem;
+    gap: 2rem;
+}
+
+.container{
+    background: #ffffff3b;
+    backdrop-filter: blur(2px);
+    border: 1px solid #fff;
+    width: 22.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.container:after{
+	content:"";
+    width: 2px;
+    height: 150px;
+    position: absolute;
+    left: -1;
+    top: 70%;
+    transition: top, opacity;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    background: linear-gradient(transparent, 
+    rgb(17, 0, 255), 
+    transparent);
+    opacity: 0;
+}
+
+.container:hover:after{
+    top: 10%;
+    opacity: 1;
+}
+
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container img{
+    width: 22.5rem;
+    border-radius: 1rem;
+}
+
+.container .content{
+    padding: 0 1.5rem; 
+    overflow: hidden;
+    height: 0;
+    transition: all .5s;
+    transform: translateY(30px);
+}
+
+.container:hover .content{
+    padding: 0 1.25rem; 
+    height: 22.5rem;
+    transform: translateY(0);
+}
+
+.content h1{
+    font-family: var(--font-family-title);
+    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content p{
+    font-family: var(--font-family-parag);
+    font-weight: 400;
+    text-align: justify;
+    color: #fff;
+    opacity: .9;
+}
+
+.more{
+    font-family: var(--font-family-title);
+    font-size: 2rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
