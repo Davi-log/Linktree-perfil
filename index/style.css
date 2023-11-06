@@ -30,6 +30,10 @@ ul, li, a{
     gap: 1rem;
 }
 
+a{
+    text-decoration: underline;
+}
+
 strong{
     display: flex;
     padding: 1.5rem 0 0 0;
